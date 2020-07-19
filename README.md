@@ -1,6 +1,13 @@
 # python-gitlab
 python-gitlab api 
 
+Use case:
+Create a Root Group, if not exists already, of type "internal" and Default Branch Protection enabled
+Create a Sub Group , if not exists already, of type "internal"
+Assign Owner to the Root Group, if the user is not already Owner.
+Create a project within the Sub Group, if not exists already, and enable deploy key on the project
+
+
 Assumptions:
 <br />
 You need to have awscli installed in your machine. You can see this documentation on how to install aws cli
@@ -24,4 +31,17 @@ You can create as many personal access tokens as you like from your GitLab profi
 Configure aws profile for creating secret in secrets manager
 
   ![picture](img/awscli_profile.png)
+
+Create secret in AWS Secrets Manager
+
+  ![picture](img/secretsmanager.png)
+
+  Output:
+  {
+  "ARN": "arn:aws:secretsmanager:us-east-1:123456789012:secret:gitlab-api-a1b2c3",
+  "Name": "gitlab-api",
+  "VersionId": "EXAMPLE1-90ab-cdef-fedc-ba987EXAMPLE"
+  }
+
+
 
