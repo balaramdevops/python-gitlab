@@ -21,5 +21,5 @@ You can create as many personal access tokens as you like from your GitLab profi
 
 Configure aws profile for creating secret in secrets manager
 
-   
+  ![picture](img/awscli_profile.png)
 
