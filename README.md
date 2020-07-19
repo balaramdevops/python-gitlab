@@ -3,8 +3,9 @@ python-gitlab api
 
 Assumptions:
 <br />
+You need to have awscli installed in your machine. You can see this documentation on how to install aws cli
 https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
-You need to have awscli installed in your machine
+<br />
 
 
 Create gitlab personal access token
