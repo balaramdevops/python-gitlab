@@ -38,7 +38,7 @@ Create secret in AWS Secrets Manager
 
   Output:
   {
-  "ARN": "arn:aws:secretsmanager:us-east-1:123456789012:secret:gitlab-api-a1b2c3",
+  "ARN": "arn:aws:secretsmanager:us-east-1:123456789012: secret:gitlab-api-a1b2c3",
   "Name": "gitlab-api",
   "VersionId": "EXAMPLE1-90ab-cdef-fedc-ba987EXAMPLE"
   }
