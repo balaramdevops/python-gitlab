@@ -1,0 +1,10 @@
+parameters_dictionary:
+  GITLAB_SERVER: http://localhost
+  GITLAB_ROOTGROUP: balaram-root
+  GITLAB_SUBGROUP: balaram-subgroup
+  GITLAB_PROJECT: balaram-project
+  GITLAB_ROOT_DESCRIPTION: balaram-project
+  GITLAB_SUB_DESCRIPTION: balaram-subgroup
+  GITLAB_GROUP_OWNER: "[balaramdevops,test,user1]"
+  JENKINS_DEPLOY_KEY_ID: "4"
+  TEMPLATE_PROJ_ID_SPRING: "1"
