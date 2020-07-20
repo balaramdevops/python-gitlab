@@ -86,6 +86,4 @@ python-gitlab api
 
 
 # Here is the complete script. 
-    <br />
     python-gitlab.py
-    <br />
