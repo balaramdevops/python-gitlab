@@ -54,3 +54,38 @@ Create secret in AWS Secrets Manager
 
 
 
+
+
+
+
+A comprehensive guide leveraging python-gitlab api to automate creation of groups, sub groups, projects, assign owners to a group
+
+Assumptions:
+Requires basic python knowledge.
+<br />
+Requires python 3.4+ installed in your machine. I used python 3.8
+<br />
+Install python-gitlab module
+<br />
+sudo pip install - upgrade python-gitlab
+<br />
+Other Python Modules needed
+<br />
+os, sys, urllib3, boto3, ast, yaml, from botocore.exceptions import ClientError
+
+
+You need to have awscli installed in your machine. You can see this documentation on how to install aws cli.
+
+https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
+GitLab EE/CE installed and configured and you have admin access.
+You have AWS account setup and have proper IAM permissions to create secret in AWS Secrets Manager.
+
+    Create gitlab personal access token:
+    Log in to GitLab.
+    In the upper-right corner, click your avatar and select Settings.
+    On the User Settings menu, select Access Tokens.
+    Choose a name and optional expiry date for the token.
+    Choose the desired scopes, Here in this case choose "api". 
+    apiGrants complete read/write access to the API, including all groups and projects, the container registry, and the package registry.
+    Click the Create personal access token button.
+    Save the personal access token somewhere safe. Once you leave or refresh the page, you won't be able to access it again.
