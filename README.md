@@ -62,25 +62,25 @@ python-gitlab api
 
 # Use cases of python script:
 
-    Assuming gitlab api key is created and stored in AWS Secrets Manager with secret_name "gitlab-api"
+    - Assuming gitlab api key is created and stored in AWS Secrets Manager with secret_name "gitlab-api"
 
-    Get the "gitlab-api" key from AWS Secrets Manager
+    - Get the "gitlab-api" key from AWS Secrets Manager
 
-    Create a Root Group, if not exists already, of type "internal" and Default Branch Protection enabled
+    - Create a Root Group, if not exists already, of type "internal" and Default Branch Protection enabled
 
-    Create a Sub Group , if not exists already, of type "internal"
+    - Create a Sub Group , if not exists already, of type "internal"
 
-    Assign Owners to the Root Group, if the user is not already Owner
+    - Assign Owners to the Root Group, if the user is not already Owner
 
-    Create a project from an instance template(if EE), within the Sub Group, if not exists already, and enable deploy key on the project(for integrating with any CI like Jenkins)
+    - Create a project from an instance template(if EE), within the Sub Group, if not exists already, and enable deploy key on the project(for integrating with any CI like Jenkins)
 
-    If you want to create a project from template, In the create_project function, uncomment below attributes and have proper template_project_id value specified in parameters.yaml file
+    - If you want to create a project from template, In the create_project function, uncomment below attributes and have proper template_project_id value specified in parameters.yaml file
 
 
         # 'use_custom_template': 'true',
         # 'template_project_id': TEMPLATE_PROJ_ID_SPRING
    
-    If you want to enable deploy key on the project, In the create_project function, uncomment below and specify proper Deploy key ID in parameters.yaml file
+    - If you want to enable deploy key on the project, In the create_project function, uncomment below and specify proper Deploy key ID in parameters.yaml file
 
         # project.keys.enable(JENKINS_DEPLOY_KEY_ID)
 
