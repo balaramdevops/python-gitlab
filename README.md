@@ -2,40 +2,43 @@
 python-gitlab api 
 
 # Assumptions:
-    - Requires basic python knowledge.
-    
-    - Requires python 3.4+ installed in your machine. I used python 3.8
-    
-    - Install python-gitlab module
-    
-    - sudo pip install - upgrade python-gitlab
-    
-    - Other Python Modules needed
-      os, sys, urllib3, boto3, ast, yaml, from botocore.exceptions import ClientError
-
-    - You need to have awscli installed in your machine. You can see this documentation on how to install aws cli
-      https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
-
-    - GitLab EE/CE installed and configured and you have admin access
-
-    - You have AWS account setup and have proper IAM permissions to create secret in AWS Secrets Manager
-
+- Requires basic python knowledge.
+<br />
+- Requires python 3.4+ installed in your machine. I used python 3.8
+<br />
+- Install python-gitlab module
+<br />
+- sudo pip install - upgrade python-gitlab
+<br />
+- Other Python Modules needed
+<br />
+  os, sys, urllib3, boto3, ast, yaml, from botocore.exceptions import ClientError
+<br />
+- You need to have awscli installed in your machine. You can see this documentation on how to install aws cli
+<br />
+  https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
+<br />
+- GitLab EE/CE installed and configured and you have admin access
+<br />
+- You have AWS account setup and have proper IAM permissions to create secret in AWS Secrets Manager
+<br />
 # Create gitlab personal access token:
-
-    - Log in to GitLab.
-    
-    - In the upper-right corner, click your avatar and select Settings.
-    
-    - On the User Settings menu, select Access Tokens.
-    
-    - Choose a name and optional expiry date for the token.
-    
-    - Choose the desired scopes, Here in this case choose "api". 
-      apiGrants complete read/write access to the API, including all groups and projects, the container registry, and the package registry.
-      
-    - Click the Create personal access token button.
-    
-    - Save the personal access token somewhere safe. Once you leave or refresh the page, you won't be able to access it again.
+<br />
+- Log in to GitLab.
+<br />
+- In the upper-right corner, click your avatar and select Settings.
+<br />
+- On the User Settings menu, select Access Tokens.
+<br /><br />
+- Choose a name and optional expiry date for the token.
+<br />
+- Choose the desired scopes, Here in this case choose "api". 
+<br />
+  apiGrants complete read/write access to the API, including all groups and projects, the container registry, and the package registry.
+<br />
+- Click the Create personal access token button.
+<br />
+- Save the personal access token somewhere safe. Once you leave or refresh the page, you won't be able to access it again.
     
 
 # Configure aws profile for creating secret in secrets manager
@@ -61,26 +64,26 @@ python-gitlab api
 
 
 # Use cases of python script:
-
-    - Assuming gitlab api key is created and stored in AWS Secrets Manager with secret_name "gitlab-api"
-
-    - Get the "gitlab-api" key from AWS Secrets Manager
-
-    - Create a Root Group, if not exists already, of type "internal" and Default Branch Protection enabled
-
-    - Create a Sub Group , if not exists already, of type "internal"
-
-    - Assign Owners to the Root Group, if the user is not already Owner
-
-    - Create a project from an instance template(if EE), within the Sub Group, if not exists already, and enable deploy key on the project(for integrating with any CI like Jenkins)
-
-    - If you want to create a project from template, In the create_project function, uncomment below attributes and have proper template_project_id value specified in parameters.yaml file
-
+<br />
+- Assuming gitlab api key is created and stored in AWS Secrets Manager with secret_name "gitlab-api"
+<br />
+- Get the "gitlab-api" key from AWS Secrets Manager
+<br />
+- Create a Root Group, if not exists already, of type "internal" and Default Branch Protection enabled
+<br />
+- Create a Sub Group , if not exists already, of type "internal"
+<br />
+- Assign Owners to the Root Group, if the user is not already Owner
+<br />
+- Create a project from an instance template(if EE), within the Sub Group, if not exists already, and enable deploy key on the project(for integrating with any CI like Jenkins)
+<br />
+- If you want to create a project from template, In the create_project function, uncomment below attributes and have proper template_project_id value specified in parameters.yaml file
+<br />
 
         # 'use_custom_template': 'true',
         # 'template_project_id': TEMPLATE_PROJ_ID_SPRING
-   
-    - If you want to enable deploy key on the project, In the create_project function, uncomment below and specify proper Deploy key ID in parameters.yaml file
+ <br />  
+- If you want to enable deploy key on the project, In the create_project function, uncomment below and specify proper Deploy key ID in parameters.yaml file
 
         # project.keys.enable(JENKINS_DEPLOY_KEY_ID)
 
