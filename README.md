@@ -10,6 +10,8 @@ Create a project within the Sub Group, if not exists already, and enable deploy 
 
 Assumptions:
 <br />
+Requires basic python knowledge.
+<br />
 You need to have awscli installed in your machine. You can see this documentation on how to install aws cli
 https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
 <br />
@@ -24,7 +26,7 @@ You can create as many personal access tokens as you like from your GitLab profi
     In the upper-right corner, click your avatar and select Settings.
     On the User Settings menu, select Access Tokens.
     Choose a name and optional expiry date for the token.
-    Choose the desired scopes.
+    Choose the desired scopes, Here in this case choose api.
     Click the Create personal access token button.
     Save the personal access token somewhere safe. Once you leave or refresh the page, you won’t be able to access it again.
 
@@ -33,15 +35,22 @@ Configure aws profile for creating secret in secrets manager
   ![picture](img/awscli_profile.png)
 
 Create secret in AWS Secrets Manager
+<br />
+  The contents of the file mycreds.json
+  <br />  
+  {"gitlab-api": "yourAPIKey"}
+<br />  
 
   ![picture](img/secretsmanager.png)
 
-  Output:
+  Example Output:
   {
   "ARN": "arn:aws:secretsmanager:us-east-1:123456789012: secret:gitlab-api-a1b2c3",
   "Name": "gitlab-api",
   "VersionId": "EXAMPLE1-90ab-cdef-fedc-ba987EXAMPLE"
   }
+
+<br />  
 
 
 
