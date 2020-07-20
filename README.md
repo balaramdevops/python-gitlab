@@ -1,7 +1,7 @@
 # python-gitlab
 python-gitlab api 
 
-Assumptions:
+# Assumptions:
     Requires basic python knowledge.
     <br />
     Requires python 3.4+ installed in your machine. I used python 3.8
@@ -21,8 +21,8 @@ Assumptions:
     <br />
     You have AWS account setup and have proper IAM permissions to create secret in AWS Secrets Manager.
 
-Create gitlab personal access token:
-    Create gitlab personal access token:
+# Create gitlab personal access token:
+
     Log in to GitLab.
     In the upper-right corner, click your avatar and select Settings.
     On the User Settings menu, select Access Tokens.
@@ -84,7 +84,7 @@ If you want to enable deploy key on the project, In the create_project function,
     # project.keys.enable(JENKINS_DEPLOY_KEY_ID)
 
 
-Here is the complete script. 
-<br />
-python-gitlab.py
-<br />
+# Here is the complete script. 
+    <br />
+    python-gitlab.py
+    <br />
