@@ -2,7 +2,6 @@
 python-gitlab api 
 
 # Assumptions:
-<br />
 - Requires basic python knowledge.
 <br />
 <br />
@@ -35,7 +34,6 @@ python-gitlab api
 <br />
 
 # Create gitlab personal access token:
-<br />
 <br />
 - Log in to GitLab.
 <br />
@@ -85,7 +83,6 @@ python-gitlab api
 
 
 # Use cases of python script:
-<br />
 <br />
 - Assuming gitlab api key is created and stored in AWS Secrets Manager with secret_name "gitlab-api"
 <br />
