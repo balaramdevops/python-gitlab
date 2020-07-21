@@ -26,11 +26,11 @@
 - Click the Create personal access token button.
 - Save the personal access token somewhere safe. Once you leave or refresh the page, you won't be able to access it again.
 
-# Configure aws profile for creating secret in secrets manager
+# Configure aws profile for creating secret in secrets manager:
 ![picture](img/awscli_profile.png)
 
 
-# Create secret in AWS Secrets Manager
+# Create secret in AWS Secrets Manager:
 - Make sure the file mycreds.json is in the same location from where you are executing the awscli command.  
       
       The contents of the file mycreds.json
@@ -60,10 +60,10 @@
 
         # project.keys.enable(JENKINS_DEPLOY_KEY_ID)
 
-# Parameters/variables for the script
-- All the parameters are stored and loaded from parameters.yaml file.
-- Example parameters.yaml file, you can update the values as per your need.
-  You can find this file, in the root of this repository.
+# Parameters/variables for the script:
+- All the parameters are stored and loaded from parameters.yaml file
+- Example parameters.yaml file, you can update the values as per your need
+  You can find the parameters.yaml file, in the root of this repository
 
 
       parameters_dictionary:
@@ -79,5 +79,5 @@
         
 - Code supports "GITLAB_SERVER" value with https as well
 
-# Here is the complete script. 
-- In the root of the repository, you can find the script "python-gitlab.py"
+# Here is the complete script:
+- In the root of this repository, you can find the script "python-gitlab.py"
