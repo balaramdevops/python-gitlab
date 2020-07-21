@@ -1,6 +1,7 @@
 # python-gitlab
 - Official Documentation
   https://python-gitlab.readthedocs.io/en/stable/index.html
+  https://docs.gitlab.com/ee/api/api_resources.html
 - Leveraging python-gitlab api to automate creation of groups, sub groups, projects, assign owners to a group.
 
 # Assumptions:
