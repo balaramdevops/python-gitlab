@@ -118,6 +118,6 @@ python-gitlab api
 
 <br />
 <br />
+
 # Here is the complete script. 
-<br />
     python-gitlab.py
