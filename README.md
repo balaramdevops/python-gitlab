@@ -33,6 +33,7 @@ python-gitlab api
 - You have AWS account setup and have proper IAM permissions to create secret in AWS Secrets Manager
 <br />
 <br />
+
 # Create gitlab personal access token:
 <br />
 <br />
