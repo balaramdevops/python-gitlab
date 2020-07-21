@@ -31,8 +31,8 @@ python-gitlab api
    ![picture](img/awscli_profile.png)
 
 
-  # Create secret in AWS Secrets Manager
-      Make sure the file mycreds.json is in the same location from where you are executing the awscli command.  
+# Create secret in AWS Secrets Manager
+- Make sure the file mycreds.json is in the same location from where you are executing the awscli command.  
       
       The contents of the file mycreds.json
       {"gitlab-api": "yourAPIKey"}
@@ -45,8 +45,6 @@ python-gitlab api
       "Name": "gitlab-api",
       "VersionId": "EXAMPLE1-90ab-cdef-fedc-ba987EXAMPLE"
       }
-
-
 
 # Use cases of python script:
 - Assuming gitlab api key is created and stored in AWS Secrets Manager with secret_name "gitlab-api"
