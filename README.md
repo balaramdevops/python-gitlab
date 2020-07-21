@@ -4,7 +4,6 @@ python-gitlab api
 # Assumptions:
 - Requires basic python knowledge.
 <br />
-<br />
 - Requires python 3.4+ installed in your machine. I used python 3.8
 <br />
 <br />
