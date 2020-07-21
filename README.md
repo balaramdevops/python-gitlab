@@ -60,5 +60,23 @@
 
         # project.keys.enable(JENKINS_DEPLOY_KEY_ID)
 
+# Parameters for the script
+- All the parameters are stored and loaded from parameters.yaml file.
+- Example parameters.yaml file, you can update the values as per your need
+
+
+      parameters_dictionary:
+        GITLAB_SERVER: http://localhost
+        GITLAB_ROOTGROUP: balaram-root
+        GITLAB_SUBGROUP: balaram-subgroup
+        GITLAB_PROJECT: balaram-project
+        GITLAB_ROOT_DESCRIPTION: balaram-project
+        GITLAB_SUB_DESCRIPTION: balaram-subgroup
+        GITLAB_GROUP_OWNER: "[balaramdevops,test,user1]"
+        JENKINS_DEPLOY_KEY_ID: "4"
+        TEMPLATE_PROJ_ID_SPRING: "1"
+        
+- Code supports "GITLAB_SERVER" value with https as well
+
 # Here is the complete script. 
     python-gitlab.py
