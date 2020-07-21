@@ -16,7 +16,10 @@
   https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
 
 - GitLab EE/CE installed and configured and you have admin access
-- You have AWS account setup and have proper IAM permissions to create secret in AWS Secrets Manager
+- You have AWS account setup and have an IAM user created with proper IAM policies configured (permissions) to create secret in AWS Secrets Manager. 
+  If unsure what policy needs to be attached, you can attach this managed policy
+ 
+      "arn:aws:iam::aws:policy/SecretsManagerReadWrite"
 
 # Create gitlab personal access token:
 - Log in to GitLab.
