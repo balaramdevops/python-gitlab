@@ -8,21 +8,30 @@ python-gitlab api
 <br />
 - Requires python 3.4+ installed in your machine. I used python 3.8
 <br />
+<br />
 - Install python-gitlab module
+<br />
 <br />
 - sudo pip install - upgrade python-gitlab
 <br />
+<br />
 - Other Python Modules needed
+<br />
 <br />
   os, sys, urllib3, boto3, ast, yaml, from botocore.exceptions import ClientError
 <br />
+<br />
 - You need to have awscli installed in your machine. You can see this documentation on how to install aws cli
+<br />
 <br />
   https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
 <br />
+<br />
 - GitLab EE/CE installed and configured and you have admin access
 <br />
+<br />
 - You have AWS account setup and have proper IAM permissions to create secret in AWS Secrets Manager
+<br />
 <br />
 # Create gitlab personal access token:
 <br />
