@@ -27,8 +27,7 @@
 - Save the personal access token somewhere safe. Once you leave or refresh the page, you won't be able to access it again.
 
 # Configure aws profile for creating secret in secrets manager
-
-   ![picture](img/awscli_profile.png)
+- ![picture](img/awscli_profile.png)
 
 
 # Create secret in AWS Secrets Manager
@@ -37,7 +36,7 @@
       The contents of the file mycreds.json
       {"gitlab-api": "yourAPIKey"}
 
-   ![picture](img/secretsmanager.png)
+- ![picture](img/secretsmanager.png)
 
       Example Output:
       {
