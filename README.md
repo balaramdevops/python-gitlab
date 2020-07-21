@@ -1,4 +1,5 @@
 # python-gitlab
+- ![picture](img/python-gitlab.png)
 - Official Documentation
   <br />
   https://python-gitlab.readthedocs.io/en/stable/index.html
