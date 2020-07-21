@@ -1,5 +1,6 @@
 # python-gitlab
 - Official Documentation
+  <br />
   https://python-gitlab.readthedocs.io/en/stable/index.html
   <br />
   https://docs.gitlab.com/ee/api/api_resources.html
