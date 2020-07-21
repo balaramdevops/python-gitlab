@@ -62,7 +62,8 @@
 
 # Parameters/variables for the script
 - All the parameters are stored and loaded from parameters.yaml file.
-- Example parameters.yaml file, you can update the values as per your need
+- Example parameters.yaml file, you can update the values as per your need.
+  You can find this file, in the root of this repository.
 
 
       parameters_dictionary:
@@ -79,4 +80,4 @@
 - Code supports "GITLAB_SERVER" value with https as well
 
 # Here is the complete script. 
-    python-gitlab.py
+- In the root of the repository, you can find the script "python-gitlab.py"
