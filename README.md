@@ -72,7 +72,8 @@
 - All the parameters are stored and loaded from parameters.yaml file
 - Example parameters.yaml file, you can update the values as per your need
   You can find the parameters.yaml file, in the root of this repository
-
+  <br />
+  https://github.com/balaramdevops/python-gitlab/blob/master/parameters.yaml
 
       parameters_dictionary:
         GITLAB_SERVER: http://localhost
@@ -89,4 +90,5 @@
 
 # Here is the complete script:
 - In the root of this repository, you can find the script "python-gitlab.py"
+  <br />
   https://github.com/balaramdevops/python-gitlab/blob/master/python-gitlab.py
