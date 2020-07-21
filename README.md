@@ -1,5 +1,5 @@
 # python-gitlab
-python-gitlab api 
+- Leveraging python-gitlab api to automate creation of groups, sub groups, projects, assign owners to a group.
 
 # Assumptions:
 
