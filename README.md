@@ -66,38 +66,19 @@ python-gitlab api
 
 
 # Use cases of python script:
-<br />
 - Assuming gitlab api key is created and stored in AWS Secrets Manager with secret_name "gitlab-api"
-<br />
-<br />
 - Get the "gitlab-api" key from AWS Secrets Manager
-<br />
-<br />
 - Create a Root Group, if not exists already, of type "internal" and Default Branch Protection enabled
-<br />
-<br />
 - Create a Sub Group , if not exists already, of type "internal"
-<br />
-<br />
 - Assign Owners to the Root Group, if the user is not already Owner
-<br />
-<br />
 - Create a project from an instance template(if EE), within the Sub Group, if not exists already, and enable deploy key on the project(for integrating with any CI like Jenkins)
-<br />
-<br />
 - If you want to create a project from template, In the create_project function, uncomment below attributes and have proper template_project_id value specified in parameters.yaml file
-<br />
 
         # 'use_custom_template': 'true',
         # 'template_project_id': TEMPLATE_PROJ_ID_SPRING
-<br />
-<br />  
 - If you want to enable deploy key on the project, In the create_project function, uncomment below and specify proper Deploy key ID in parameters.yaml file
 
         # project.keys.enable(JENKINS_DEPLOY_KEY_ID)
-
-<br />
-<br />
 
 # Here is the complete script. 
     python-gitlab.py
