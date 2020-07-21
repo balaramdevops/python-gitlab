@@ -60,7 +60,7 @@
 
         # project.keys.enable(JENKINS_DEPLOY_KEY_ID)
 
-# Parameters for the script
+# Parameters/variables for the script
 - All the parameters are stored and loaded from parameters.yaml file.
 - Example parameters.yaml file, you can update the values as per your need
 
