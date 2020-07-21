@@ -17,31 +17,14 @@ python-gitlab api
 - You have AWS account setup and have proper IAM permissions to create secret in AWS Secrets Manager
 
 # Create gitlab personal access token:
-<br />
 - Log in to GitLab.
-<br />
-<br />
 - In the upper-right corner, click your avatar and select Settings.
-<br />
-<br />
 - On the User Settings menu, select Access Tokens.
-<br />
-<br />
 - Choose a name and optional expiry date for the token.
-<br />
-<br />
 - Choose the desired scopes, Here in this case choose "api". 
-<br />
-<br />
   apiGrants complete read/write access to the API, including all groups and projects, the container registry, and the package registry.
-<br />
-<br />
 - Click the Create personal access token button.
-<br />
-<br />
 - Save the personal access token somewhere safe. Once you leave or refresh the page, you won't be able to access it again.
-<br />
-<br /> 
 
 # Configure aws profile for creating secret in secrets manager
 
